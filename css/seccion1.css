@@ -1,0 +1,144 @@
+.seccion1 {
+    position: relative;
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.sec1__logo {
+    margin-top: 2.5rem;
+    width: 120px;
+    height: 48px;
+}
+
+.sec1__encriptar {
+    width: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.sec1__textArea {
+   
+    width: 720px;
+    height: 360px;
+    background: #F3F5FC;
+    font-size: 23px;
+    border: none;
+    margin-top: 40px;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.sec1__footer {
+    bottom: 0;
+    margin-top: 14vh;
+    margin-bottom: 20px;
+}
+
+.sec1__recomendacion {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.sec1__vector {
+    width: 16px;
+    height: 16px;
+}
+
+.sec1__parrafo {
+    font-size: 16px;
+    font-family:sans-serif;
+    color: #495057;
+}
+
+.sec1__btns {
+    display: flex;
+    gap: 24px;
+    width: auto;
+}
+
+.btn__Encriptar {
+    background: #0A3871;
+    color: white;
+    border: none;
+}
+
+.btn__Desencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+}
+
+@media (max-width:1030px) {
+    .seccion1 {
+        margin:auto;
+        width: auto;
+        height: auto;
+    }
+
+    .sec1__encriptar {
+        width: auto;
+        height: auto;
+    }
+
+    .sec1__textArea {
+        width: 43.75rem;
+        padding: 2rem;
+        height: 22em;
+        font-size: 2.2rem;
+    }
+
+    .sec1__footer {
+        margin: 0;
+    }
+}
+
+@media (max-width:420px) {
+    .seccion1 {
+        margin: auto;
+        width: auto;
+    }
+
+    .sec1__encriptar {
+        width: auto;
+        padding: 0;
+    }
+
+    .sec1__textArea { 
+        padding: 1px;
+        margin:20px 0 0 0;
+        width: 359px;
+        height: 649px;
+        font-size: 1.8rem;
+    }
+    
+
+    .sec1__footer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .sec1__parrafo { 
+        font-size: 1rem;
+    }
+
+    .sec1__btns {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,111 @@
+.seccion2 {
+    position: relative;
+    width: 35vw;
+    height: 100vh;
+    margin-left: 1rem;
+}
+
+.sec2__area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    background: white;
+    width: 400px;
+    height: 85vh;
+    margin: 40px auto 40px auto;
+    border-radius: 24px;
+    box-shadow: 1px 1px 20px rgb(121, 119, 119);
+}
+
+.sec2__resultado {
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
+}
+
+.sec2__imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0 auto 0;
+}
+
+.sec2__muneco{
+    width: 320px;
+    height: 288px;
+    margin-bottom: 10px;
+}
+
+.sec2__msjTexto{
+    width: 300px;
+    height: 268;
+    margin-top: 10px;
+}
+
+.btn-copiar{
+    position: absolute;
+    bottom: 0;
+    background: white;
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.ocultar {
+    display: none;
+}
+
+@media (max-width:1030px) {
+    .seccion2 {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .sec2__area {
+        margin-top: 20px;
+        width: 43.125rem;
+        height: auto;
+
+    }
+
+    .sec2__muneco { 
+        display: none;
+    }
+
+    .btn-copiar {
+        margin: 10px 0 10px 0;
+    }
+
+}
+
+@media (max-width:420px) {
+    .seccion2 {
+        width: auto;
+        padding: 0;
+        margin: auto;
+    }
+    .sec2__area {
+        width: auto;
+        padding: 0;
+        min-width: 21.25rem;
+    }
+
+    .sec2__imgs {
+        width: auto;
+    }
+    .sec2__msjTexto {
+        width: 300px;
+        height: 100px;
+    }
+
+    .btn-copiar {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
