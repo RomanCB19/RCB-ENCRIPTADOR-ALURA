@@ -10,6 +10,9 @@ var imgns = document.querySelector(".sec2__imgs");
 
 btnCopiar.classList.add("ocultar");
 
+var resultadoT = document.querySelector(".sec2__resultado");
+resultadoT.classList.add("ocultar");
+
 function encriptar() {
     var texto = document.querySelector(".sec1__textArea").value.toLowerCase();
     var textoEncriptado = "";
@@ -38,6 +41,7 @@ function encriptar() {
 
     document.querySelector(".sec2__resultado").innerHTML = textoEncriptado;
     btnCopiar.classList.remove("ocultar")
+    resultadoT.classList.remove("ocultar");
 }
 
 function desencriptar () {
@@ -73,7 +77,8 @@ function desencriptar () {
     ocultar();
 
     document.querySelector(".sec2__resultado").innerHTML = textoEncriptado;
-    btnCopiar.classList.remove("ocultar")
+    btnCopiar.classList.remove("ocultar");
+    resultadoT.classList.remove("ocultar");
 }
 
 function ocultar () {
